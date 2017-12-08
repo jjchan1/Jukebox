@@ -1,20 +1,107 @@
 
 body {
 	background-color: #141f1f;
+	font-family: arial;
+	color: #e2e2e2;
+	margin: 0;
+	text-align: center;
 }
 
-h1 {
-	font-family: arial;
-	color: white;
-	text-align: center;
+.container.header h1,
+.container.header h2 {
+	text-align: center;	
+}
+
+.container.header h1 {
+	font-size: 50px;
+	font-style: italic;
+}
+
+.container.header h2 {
 	font-size: 30px;
 }
 
-h2 {
-	font-family: arial;
-	color: white;
+.container.list {
 	text-align: center;
-	font-size: 20px;
+	max-width: 500px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.container.list ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container.list li {
+	border: 1px solid #334e4e;
+	height: 40px;
+	margin: 0 20px;
+	position: relative;
+	background: #2b4242;
+	padding-left: 20px;
+	line-height: 40px;
+	text-align: left;
+}
+
+.container.list.item-list li:hover,
+.container.list li:hover a.item {
+	background: #e2e2e2;
+	color: #141f1f;
+	transition: background .1s ease-in-out, color .1s ease-in-out;
+}
+
+.container.list a.item {
+	height: 40px;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.container.list a.item > i {
+	float: right;
+	font-size: 30px;
+	line-height: 40px;
+	padding-right: 10px;
+}
+
+.container.form-list input {
+	background: transparent;
+	width: 60%;
+	height: 100%;
+	float: right;
+	padding: 0 10px;
+	border: none;
+	font-size: 15px;
+	color: #e2e2e2;
+	background: #192828;
+	border-radius: 7px;
+}
+
+.container.form-list input[type="submit"] {
+	width: 100%;
+	background: #151919;
+	border-radius: 7px;
+	cursor: pointer;
+}
+.container.form-list input[type="submit"]:hover {
+	background: #5c6767;
+}
+
+.container.form-list input:focus {
+	outline: none;
+}
+
+.container.form-list label {
+	position: absolute;
+}
+
+.container.nav i {
+	font-size: 50px;
+	padding: 15px;
+	color: #e2e2e2;
 }
 
 h3 {
@@ -37,85 +124,7 @@ p {
 	color: white;
 }
 
-a.hBox{
-  width: 50%;
-  line-height: 50px;
-  
-  border: 2px solid white;
-  border-radius: 6px;
-  background-color: #141f1f;
-
-  padding: 0px 15px;
-  margin: 3px;
-  
-  font-family: arial;
-  color: white;
-
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;    
-}
-
-a.hBox:link, a.hBox:visited {
-  width: 50%;
-  line-height: 50px;
-  
-  border: 2px solid white;
-  border-radius: 6px;
-  background-color: #141f1f;
-
-  padding: 0px 15px;
-  margin: 3px;
-  
-  font-family: arial;
-  color: white;
-
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;    
-}
-
-a.hBox:hover, a.box:active {
-    background-color: #283e3e;
-}
-
-a.box:link, a.box:visited {
-  width: 93%;
-  line-height: 50px;
-
-  border: 2px solid white;
-  border-radius: 6px;
-  background-color: #141f1f;
-
-  padding: 0px 15px;
-  margin: 3px;
-
-  font-family: arial;
-  color: white;
-
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a.icon:hover, a.box:active {
-    color: #8ba0a0;
-}
-
-a:link, a:visited {
-    
-  margin: 3px;
-  color: white;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;    
-}
-
-a:hover, a:active {
-	color: #8ba0a0;  
-}
-
-.nav {
+.container.nav {
   overflow: hidden;
   background-color: #101b1b;
   position: fixed;
@@ -173,27 +182,6 @@ a:hover, a:active {
   text-decoration: none;
   display: inline-block;   
  }
-  
- input, select {
-  height: 50px;
-  width: 87%;
-  max-width: 500px;
-  line-height: 50px;
-  
-  border: 2px solid white;
-  border-radius: 6px;
-  background-color: #141f1f;
-
-  padding: 0px 15px;
-  margin: 3px;
-  
-  font-family: arial;
-  color: white;
-
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-} 
   
 .vertical-menu {
   height: 230px;
